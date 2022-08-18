@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Login here</title>
+  </head>
+
+  <nav class="navbar" id="navbar">
+   <div class="max-width">
+       <div class="logo"><a href="./index.html">Paterne.</a></div>
+       <ul class="menu" id="nav-links">
+           <li><a href="./index.html" class="menu-btn">Home</a></li>
+           <li><a href="http://127.0.0.1:5501/index.html#about" class="menu-btn">About</a></li>
+           <li><a href="http://127.0.0.1:5501/index.html#skills" class="menu-btn">Skills</a></li>
+           <li><a href="./http://127.0.0.1:5500/index.html#Blog" class="menu-btn">Blog</a></li>
+           <li><a href="http://127.0.0.1:5501/index.html#contact" class="menu-btn">Contact us</a></li>
+       
+           
+       </ul>
+       <div class="menu-btn" id="menu-btn">
+           <i class="fas fa-bars"></i>
+       </div>
+
+       <div class="menu-btn" id="close-btn">
+         <i class="fas fa-bars"></i>
+     </div>
+   </div>
+</nav>
+
+	<body>
+	<!-- Main div code -->
+	<div id="main">
+	<div class="h-tag">
+	<h2>Welcome Admin!</h2>
+	</div>
+	<!-- Login box -->
+	<div class="login">
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+	<tr>
+	<td>Enter Your Email :</td>
+	<td><input type="text" placeholder="Enter your email here" id="email" class="tb" /></td>
+	</tr>
+	<tr>
+	<td>Enter Password :</td>
+	<td><input type="password" placeholder="Enter Password here" id="pwd1" class="tb" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td>
+	<!-- <input type="submit" value="Reset" onclick="clearFunc()" class="btn" /> -->
+	<input type="submit" value="Login" class="btn" onClick="login()" /></td>
+	</tr>
+	</table>
+	</div>
+  	 <!-- login box div ending here.. -->
+       <head>
+        <style type="text/css">
+        
+        body
+   {
+     margin:0px; background-color:#190564; color:#ffffff; font-family:"Poppins", sans-serif;
+   }
+   #main
+   {
+     width:600px; height:260px; margin-left:auto; margin-right:auto; border-radius:5px; padding-left:10px; margin-top:100px;
+      padding-top:20px;
+   }
+   #main table
+   {
+	width: 490px;
+  padding: 40px 30px 50px 30px;
+  background: rgb(31, 6, 122);
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+   } 
+  /* css code for textbox */
+  #main .tb
+  {
+    height:20px; width:230px; border:2px solid #0c1611; color:#080a09; font-weight:bold; border-left:5px solid #001aff; opacity:0.9;
+  }
+
+  .wrapper a:hover{
+  text-decoration: none;
+  
+}
+
+
+
+
+
+
+/* navbar styling */
+.navbar{
+    background-color: #081D45;
+    position: fixed;
+    width: 100%;
+    
+    border-radius: 5px;
+    
+    padding: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    margin-top: -100px;
+    text-decoration: none;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: #081D45;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar .logo a span{
+    color: #081D45;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: rgb(0, 0, 0);
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #ff00c8;
+}
+.navbar.sticky .menu li a:hover{
+    color: rgb(0, 0, 0);
+}
+.navbar .logo a:hover{
+   color: #ff00c8;
+   transition: 0.8s ease-in-out;
+}
+/* menu btn styling */
+.menu-btn{
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    cursor: pointer;
+    display: none;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+   /* css code for button*/
+   #main .btn
+   {
+    background-color: red; width:80px; margin-left: 160px; height:32px; outline:none;  font-weight:bold; border:0px solid #27a465; text-shadow: 0px 0.5px 0.5px #fff;	
+    border-radius: 2px; font-weight: 600; color: #f1f1f1; letter-spacing: 1px; font-size:14px; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;
+   }
+  
+   #main .btn:hover
+   {
+    background-color:#1c0049; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
+   }
+  h2{
+	  margin-left: 200px;
+  }
+   
+        
+        </style>
+        </head>
+	</div>
+    <head>
+        <script>
+        
+      
+      
+      
+        function login()
+	{
+		var uname = document.getElementById("email").value;
+		var pwd = document.getElementById("pwd1").value;
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(uname=="reesltd16@gmail.com"&& pwd=="bbc123")
+		{
+			alert("Welcome admin! Login successfully😎");
+            //Redirecting to other page or webste
+            window.location = "http://127.0.0.1:5501/Crued%20blog/pages/dashboard.html";
+            return false;
+		}
+        else if(uname=='')
+        {
+            alert("Enter the email")
+        }
+		else if(pwd=='')
+		{
+        	alert("enter the password");
+		}
+		else if(!filter.test(uname))
+		{
+			alert("Enter valid email id.");
+		}
+		else if(pwd.length < 6 || pwd.length > 30)
+		{
+			alert("Password min and max length is 6.");
+		}
+		else
+		{
+	alert('🥺 Oops! Your inputs are incorrect ');
+  
+      
+			}
+	}
+    
+        </script>
+        </head>
+	<!-- Main div ending here... -->
+    
+  </body>
+  </html>
+  

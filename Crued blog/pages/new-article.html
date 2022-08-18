@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/home.css">
+    <title>My Blog</title>
+  </head>
+  <body>
+    <nav class="navbar sticky">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Hi<span>Heritier</span></a>
+        </div>
+        <ul class="menu">
+         
+          <li><a href="./dashboard.html" class="menu-btn">Dashboard</a></li>
+          <li>
+            <li><a href="./blogMainAdmin.html" class="menu-btn">View article</a></li>
+           <li> <a href="./new-article.html" class="menu-btn">New Article</a>
+          </li>
+          <li><a href="./queries.html" class="menu-btn">Queries</a></li>
+          <li></li> <a href="/index.html" class="btn">LOGOUT</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="container">
+          <div class="card article-card-form">
+            <h3 class="card-title">NEW ARTICLE FORM</h3>
+            <div class="card-body">
+                <form action="#" id="new-article-form" class="form">
+                    <div>
+                        <span>Title</span>
+                        <input type="text" id="title" placeholder="Enter article title" required min="5" minlength="5">
+                    </div>
+                    <div>
+                        <span>image</span>
+                        <input type="file" id="image" required>
+                    </div>
+                    <div>
+                        <span>Body</span>
+                        <textarea id="body" cols="30" rows="4" required minlength="10"></textarea>
+                    </div>
+                    <div>
+                        <span>Tags</span>
+                        <select id="tag" required>
+                            <option value="">Select tag</option>
+                            <option value="Tech">Tech</option>
+                            <option value="Business">Business</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </section>
+      <footer>
+        <span
+        >Created By <a href="#">HiHeritier</a> |
+          <span class="far fa-copyright"></span> 2022
+        </span>
+      </footer>
+    </main>
+    <script type="module" src="./JavaScript/article.js"></script>
+  </body>
+</html>

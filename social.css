@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/* .faceit{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  float: left;
+} */
+/* .faceit .body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+} */
+.social .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 34px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.social .button:hover{
+  width: 200px;
+}
+.social .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.social .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.social .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.social .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.social .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.social .button:nth-child(5):hover .icon{
+  background: #666ce2;
+}
+.social .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.social .button:hover .icon i{
+  color: #fff;
+}
+.social .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.social .button:nth-child(1) span{
+  color: #4267B2;
+}
+.social .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.social .button:nth-child(3) span{
+  color: #E1306C;
+}
+.social .button:nth-child(4) span{
+  color: #333;
+}
+.social .button:nth-child(5) span{
+  color: #384dd2;
+}
+
+.social .button span{
+  margin-top:10px ;
+}
+
+
+
